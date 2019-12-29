@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ADD5E453"
+        android:gravity="center_horizontal"
+        android:text="AROUND SEARCH"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#17FFEB3B"
+        android:onClick="onClick"
+        android:text="현재 위치로 검색"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_name_search"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="기준 주소를 입력하세요"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_name_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#17FFEB3B"
+            android:onClick="onClick"
+            android:text="search"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="543dp"
+        app:cameraTargetLat="37.606567"
+        app:cameraTargetLng="127.041776"
+        app:cameraZoom="15" />
+
+
+</LinearLayout>

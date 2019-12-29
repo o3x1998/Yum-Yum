@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ADD5E453"
+        android:gravity="center_horizontal"
+        android:text="LOCAL SEARCH"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etLsearch"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="해당 맛집 정보 찾기 (LOCAL 검색)"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnLsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#17FFEB3B"
+            android:onClick="onClick"
+            android:text="search" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvLocal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

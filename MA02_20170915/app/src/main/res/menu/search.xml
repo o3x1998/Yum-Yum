@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search_blog"
+        android:onClick="onMenuItemClick"
+        android:title="맛집 검색" />
+    <item
+        android:id="@+id/search_logical"
+        android:onClick="onMenuItemClick"
+        android:title="상세 검색" />
+    <item
+        android:id="@+id/search_around"
+        android:onClick="onMenuItemClick"
+        android:title="주변 음식점 검색" />
+</menu>
